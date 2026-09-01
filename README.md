@@ -45,15 +45,10 @@ This script will upload the code, compile the server, enable IP forwarding, conf
 
 ### 2. Client Setup (Windows)
 
-Because we don't include compiled `.exe` files in the source code, you must build it yourself the first time:
+We provide a pre-compiled, standalone executable so you **do not** need to install Rust or compile anything.
 
-1. Ensure you have [Rust](https://rustup.rs/) installed on Windows.
-2. Run the build script:
-   ```powershell
-   .\build.bat
-   ```
-3. This will create a standalone **`Xvpn.exe`** file in the root folder.
-4. Double-click **`Xvpn.exe`**.
+1. Go to the [Releases](../../releases/latest) page and download **`Xvpn.exe`**.
+2. Double-click the downloaded **`Xvpn.exe`**.
 5. **First Run:** A console window will pop up asking for your Server IP. Type the IP address of your AWS/VPS server and press Enter. It will be saved to a `server.txt` file.
 6. **Allow Admin:** Click "Yes" when Windows asks for Administrator privileges (required to create the virtual network adapter).
 7. You are connected! To disconnect, just press `Ctrl+C` in the console window.
