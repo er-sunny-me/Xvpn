@@ -1,0 +1,138 @@
+:root {
+  --bg-main: #0f0505;
+  --bg-card: #1a0808;
+  --accent-color: #ef4444;
+  --accent-hover: #dc2626;
+  --text-main: #ffffff;
+  --text-muted: #a1a1aa;
+  --danger-color: #ef4444;
+  --danger-hover: #dc2626;
+  --success-color: #10b981;
+  --border-color: #3f1a1a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  user-select: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: var(--accent-color);
+}
+
+.header p {
+  margin: 5px 0 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  border-color: var(--accent-color);
+}
+
+.btn-connect {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.1s, background-color 0.2s;
+}
+
+.btn-connect:hover {
+  background-color: #0ea5e9;
+}
+
+.btn-connect:active {
+  transform: scale(0.98);
+}
+
+.btn-disconnect {
+  background-color: var(--danger-color);
+}
+
+.btn-disconnect:hover {
+  background-color: #dc2626;
+}
+
+.status-container {
+  margin-top: 20px;
+}
+
+#status-text {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 0 5px;
+}
+
+.status-disconnected { color: var(--text-muted); }
+.status-connecting { color: var(--accent-color); }
+.status-connected { color: var(--success-color); }
+
+.log-text {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0;
+  height: 15px;
+}

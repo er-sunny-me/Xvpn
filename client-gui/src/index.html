@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xvpn</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🔒 Xvpn</h1>
+        <p>Native Desktop Client</p>
+      </div>
+
+      <div class="card">
+        <div class="input-group">
+          <label for="server-ip">Server IP (Leave empty for Free Public Server)</label>
+          <input id="server-ip" type="text" placeholder="Default: 13.235.67.162" />
+        </div>
+
+        <button id="toggle-btn" class="btn-connect">Connect</button>
+        
+        <div class="status-container">
+          <p id="status-text" class="status-disconnected">Disconnected</p>
+          <p id="log-text" class="log-text"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
